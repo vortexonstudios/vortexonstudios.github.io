@@ -210,6 +210,9 @@ body {
     font-family: 'Poppins', sans-serif;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn-primary {
@@ -529,6 +532,13 @@ body {
     opacity: 0.5;
 }
 
+.game-screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .game-overlay {
     position: absolute;
     bottom: 0;
@@ -579,6 +589,53 @@ body {
     border-radius: 20px;
     color: var(--primary-purple);
     font-size: 0.8rem;
+}
+
+/* Game Gallery */
+.game-gallery {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 2rem;
+    color: var(--primary-purple);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--dark-gray);
+    border: 2px solid var(--gray);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-purple);
+    box-shadow: 0 20px 60px rgba(157, 78, 221, 0.3);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
 }
 
 /* Contact Section */
@@ -799,6 +856,14 @@ body {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-title {
+        font-size: 1.5rem;
     }
 }
 
