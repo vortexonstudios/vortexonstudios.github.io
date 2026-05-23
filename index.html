@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortexon Studios | Official Website — Investor Relations</title>
+    <meta name="description" content="Vortexon Studios — Ödüllü bağımsız oyun stüdyosu. The Black Shift, Market is Fine ve Vatan oyunlarının geliştiricisi. Yatırım ortaklığı fırsatları.">
+    <meta property="og:title" content="Vortexon Studios | Official Website">
+    <meta property="og:description" content="Oyun tarihinde bir ilk — Local AI destekli The Black Shift projesi için yatırımcı ortaklığı.">
+    <meta property="og:image" content="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4415380/7be7bc7b2ebe2257983c9652d4ff5fabadf0474c/capsule_616x353.jpg?t=1777511903">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ====== PARTICLE CANVAS ====== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Vortexon Studios" class="nav-logo-img">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#hero" data-i18n="nav.home">Ana Sayfa</a>
+                <a href="#blackshift" data-i18n="nav.blackshift">The Black Shift</a>
+                <a href="#games" data-i18n="nav.games">Oyunlarımız</a>
+                <a href="#team" data-i18n="nav.team">Ekip</a>
+                <a href="#contact" data-i18n="nav.contact">İletişim</a>
+            </div>
+            <div class="nav-actions">
+                <button id="lang-btn" class="lang-btn" aria-label="Switch language">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="lang-current">EN</span>
+                </button>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="assets/images/black_shift_gameplay.jpg" alt="The Black Shift" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-reveal>
+                <i class="fa-solid fa-trophy"></i>
+                <span data-i18n="hero.badge">Batı Karadeniz Game Jam — 1. Ödül</span>
+            </div>
+            <h1 class="hero-title" data-reveal>
+                <span data-i18n="hero.title1">Hikayeleri Yapay Zeka ile</span><br>
+                <span class="hero-title-accent" data-i18n="hero.title2">Yeniden Tanımlıyoruz</span>
+            </h1>
+            <p class="hero-desc" data-reveal data-i18n="hero.desc">
+                Vortexon Games olarak, oyuncunun her kararını analiz eden ve tehditlerle karşılık veren yerel yapay zeka mekaniğiyle oyun tarihinde bir ilke imza atıyoruz. İlk katıldığımız Game Jam'de şampiyonluk kazandık.
+            </p>
+            <div class="hero-cta" data-reveal>
+                <a href="#blackshift" class="btn-primary">
+                    <span data-i18n="hero.cta1">Projemizi Keşfet</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn-outline">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span data-i18n="hero.cta2">Yatırımcı Portalı</span>
+                </a>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== THE BLACK SHIFT — FLAGSHIP SECTION ====== -->
+    <section id="blackshift" class="section blackshift-section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag" data-i18n="bs.tag">Yatırımcı Odağı — Başyapıtımız</span>
+                <h2 class="section-title">THE BLACK SHIFT</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="bs-grid">
+                <!-- Left: Visual -->
+                <div class="bs-visual" data-reveal>
+                    <div class="bs-image-wrap">
+                        <img src="assets/images/black_shift_gameplay.jpg" alt="The Black Shift" class="bs-image">
+                        <div class="bs-image-overlay"></div>
+                        <div class="bs-badge-dev">
+                            <i class="fa-solid fa-code"></i>
+                            <span data-i18n="bs.devstatus">Aktif Geliştirme</span>
+                        </div>
+                        <div class="bs-badge-award">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span data-i18n="bs.award">Game Jam 1.si</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Info -->
+                <div class="bs-info" data-reveal>
+                    <div class="bs-ai-badge">
+                        <i class="fa-solid fa-brain"></i>
+                        <span data-i18n="bs.aibadge">Dünyada Bir İlk — Yerel AI Motoru</span>
+                    </div>
+
+                    <h3 class="bs-headline" data-i18n="bs.headline">Senin Seçimlerin, Onun Tehditleri.</h3>
+                    
+                    <p class="bs-desc" data-i18n="bs.desc1">
+                        Oyun dünyasında daha önce hiç denenmemiş bir yerel yapay zeka entegrasyonu. AI, oyun boyunca seçimlerinizi, duygusal tepkilerinizi ve karakter davranışlarınızı gerçek zamanlı analiz eder.
+                    </p>
+
+                    <div class="bs-feature-card">
+                        <div class="bs-feature-icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="bs-feature-text">
+                            <h4 data-i18n="bs.feat.title">Tehdit Eden AI Mekaniği</h4>
+                            <p data-i18n="bs.feat.desc">
+                                Local AI davranışlarınızı analiz ederek sizi tehdit eder, manipüle eder ve öngörülemeyen görevler verir. Hikayenin başı belli — sonu sizin duygusal kimliğinize göre şekillenir.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bs-stats">
+                        <div class="bs-stat">
+                            <span class="bs-stat-value">1.</span>
+                            <span class="bs-stat-label" data-i18n="bs.stat1">İlk Game Jam'de Birincilik</span>
+                        </div>
+                        <div class="bs-stat">
+                            <span class="bs-stat-value">∞</span>
+                            <span class="bs-stat-label" data-i18n="bs.stat2">Dinamik Hikaye Sonu</span>
+                        </div>
+                        <div class="bs-stat">
+                            <span class="bs-stat-value">100%</span>
+                            <span class="bs-stat-label" data-i18n="bs.stat3">Yerel AI — İnternet Gereksiz</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary btn-lg">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <span data-i18n="bs.cta">Pitch Deck & Yatırım Dosyası Al</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== OUR GAMES SECTION ====== -->
+    <section id="games" class="section games-section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag" data-i18n="games.tag">Stüdyo Portföyü</span>
+                <h2 class="section-title" data-i18n="games.title">Oyunlarımız</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="games-grid">
+                <!-- Market is Fine -->
+                <div class="game-card" data-reveal>
+                    <div class="game-card-visual">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4415380/7be7bc7b2ebe2257983c9652d4ff5fabadf0474c/capsule_616x353.jpg?t=1777511903" 
+                             alt="Market is Fine" class="game-card-img">
+                        <div class="game-card-overlay"></div>
+                        <div class="game-status released">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span data-i18n="g1.status">Çıkış Yaptı</span>
+                        </div>
+                    </div>
+                    <div class="game-card-body">
+                        <h3 class="game-card-title">Market is Fine</h3>
+                        <div class="game-card-meta">
+                            <span class="game-dev-badge">
+                                <i class="fa-solid fa-user"></i>
+                                <span data-i18n="g1.dev">Solo Geliştirici: Emirhan K.</span>
+                            </span>
+                        </div>
+                        <p class="game-card-desc" data-i18n="g1.desc">
+                            Enflasyon uçuyor, müşteriler isyanda ve dükkân yanıyor! Ekonomik kriz ve toplumsal kaosun ortasında bir market yönetim ve hayatta kalma simülasyonu. 150+ absürt kriz mekaniği.
+                        </p>
+                        <div class="game-card-tags">
+                            <span>Simulation</span>
+                            <span>Management</span>
+                            <span>Comedy</span>
+                        </div>
+                        <a href="https://store.steampowered.com/app/4415380" target="_blank" rel="noopener" class="btn-steam">
+                            <i class="fa-brands fa-steam"></i>
+                            <span data-i18n="g.steam">Steam'de İncele</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vatan -->
+                <div class="game-card" data-reveal>
+                    <div class="game-card-visual">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4619810/15113b096af573950cf14329dfc31e1597808499/capsule_616x353.jpg?t=1777825932" 
+                             alt="Vatan" class="game-card-img">
+                        <div class="game-card-overlay"></div>
+                        <div class="game-status upcoming">
+                            <i class="fa-solid fa-clock"></i>
+                            <span data-i18n="g2.status">2026'da Çıkacak</span>
+                        </div>
+                    </div>
+                    <div class="game-card-body">
+                        <h3 class="game-card-title">Vatan</h3>
+                        <div class="game-card-meta">
+                            <span class="game-dev-badge">
+                                <i class="fa-solid fa-users"></i>
+                                <span data-i18n="g2.dev">Abdullah K. & Emirhan K.</span>
+                            </span>
+                        </div>
+                        <p class="game-card-desc" data-i18n="g2.desc">
+                            1892 Sivas'ında geçen anlatı odaklı tarihi drama. Genç Ahmet'in ailesi, aşkı ve vatanı arasında kalan hayatında her seçimin duygusal bir bedeli var.
+                        </p>
+                        <div class="game-card-tags">
+                            <span>Narrative</span>
+                            <span>Historical</span>
+                            <span>Drama</span>
+                        </div>
+                        <a href="https://store.steampowered.com/app/4619810/Vatan/" target="_blank" rel="noopener" class="btn-wishlist">
+                            <i class="fa-solid fa-heart"></i>
+                            <span data-i18n="g.wishlist">İstek Listesine Ekle</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TEAM SECTION ====== -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag" data-i18n="team.tag">Arkasındaki İsimler</span>
+                <h2 class="section-title" data-i18n="team.title">Ekibimiz</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card" data-reveal>
+                    <div class="team-avatar" style="--accent: #a4e312;">
+                        <span>EK</span>
+                    </div>
+                    <h3 class="team-name">Emirhan K.</h3>
+                    <span class="team-role" data-i18n="t1.role">Kurucu & Oyun AI Geliştiricisi</span>
+                    <p class="team-bio" data-i18n="t1.bio">
+                        Vortexon Studios kurucusu. Market is Fine'ı tek başına geliştirip Steam'de yayınladı. Vatan ve The Black Shift'in hikaye dünyasının yaratıcısı, teknik mimarı, motor programcısı ve oyun içi yapay zeka sistemlerinin geliştiricisi.
+                    </p>
+                    <div class="team-games">
+                        <span>Market is Fine</span>
+                        <span>Vatan</span>
+                        <span>The Black Shift</span>
+                    </div>
+                    <div class="team-social">
+                        <a href="https://www.instagram.com/nowaky16/" target="_blank" rel="noopener" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-card" data-reveal>
+                    <div class="team-avatar" style="--accent: #00c8ff;">
+                        <span>AK</span>
+                    </div>
+                    <h3 class="team-name">Abdullah K.</h3>
+                    <span class="team-role" data-i18n="t2.role">Kreatif Direktör & Oyun AI Geliştiricisi</span>
+                    <p class="team-bio" data-i18n="t2.bio">
+                        Stüdyonun yaratıcı beyni ve fikir üreticisi. Oyun tasarımı, konsept geliştirme ve yaratıcı yönlendirmeden sorumlu. Vatan ve The Black Shift'in diyalogları ve yapay zeka davranış sistemlerinin tasarımcısı.
+                    </p>
+                    <div class="team-games">
+                        <span>Vatan</span>
+                        <span>The Black Shift</span>
+                    </div>
+                    <div class="team-social">
+                        <a href="https://www.instagram.com/abdullah_krks2604/" target="_blank" rel="noopener" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT / INVESTOR SECTION ====== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag" data-i18n="contact.tag">Yatırımcı İlişkileri</span>
+                <h2 class="section-title" data-i18n="contact.title">İletişime Geçin</h2>
+                <div class="section-line"></div>
+                <p class="section-desc" data-i18n="contact.desc">
+                    The Black Shift projemiz için yatırım ortaklıklarına açığız. Bizimle iletişime geçin ve oyun tarihindeki ilk davranışsal AI devriminde pay sahibi olun.
+                </p>
+            </div>
+
+            <form id="contact-form" action="https://formspree.io/f/mwvzqoze" method="POST" class="contact-form" data-reveal>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname" data-i18n="form.name">Ad Soyad / Şirket</label>
+                        <input type="text" id="fname" name="Name" required placeholder="Örn: ABC Ventures">
+                    </div>
+                    <div class="form-group">
+                        <label for="femail" data-i18n="form.email">E-Posta</label>
+                        <input type="email" id="femail" name="Email" required placeholder="investor@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fsubject" data-i18n="form.subject">Konu</label>
+                    <select id="fsubject" name="Subject" required>
+                        <option value="The Black Shift Yatırım Fırsatları" data-i18n="form.opt1">The Black Shift Yatırım Fırsatları</option>
+                        <option value="Pitch Deck Talebi" data-i18n="form.opt2">Pitch Deck Talebi</option>
+                        <option value="Yayıncılık / Ortaklık" data-i18n="form.opt3">Yayıncılık / Ortaklık</option>
+                        <option value="Diğer" data-i18n="form.opt4">Diğer</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fmsg" data-i18n="form.msg">Mesajınız</label>
+                    <textarea id="fmsg" name="Message" rows="5" required placeholder="Bize kendinizden veya ortaklık teklifinizden bahsedin..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-lg btn-full">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span data-i18n="form.submit">Gönder & Pitch Deck Al</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="assets/images/logo.png" alt="Vortexon Studios" class="footer-logo-img">
+                <span class="footer-copy" data-i18n="footer.copy">© 2026 Vortexon Studios. Tüm hakları saklıdır.</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://store.steampowered.com/app/4415380" target="_blank" rel="noopener" title="Market is Fine">
+                    <i class="fa-brands fa-steam"></i>
+                </a>
+                <a href="https://store.steampowered.com/app/4619810/Vatan/" target="_blank" rel="noopener" title="Vatan">
+                    <i class="fa-brands fa-steam"></i>
+                </a>
+                <a href="mailto:vortexon@vortexonstudios.com" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== TOAST ====== -->
+    <div id="toast" class="toast">
+        <div class="toast-icon"><i class="fa-solid fa-check-circle"></i></div>
+        <div class="toast-body">
+            <strong data-i18n="toast.title">Mesaj gönderildi!</strong>
+            <span data-i18n="toast.desc">Pitch Deck ile birlikte en kısa sürede döneceğiz.</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
