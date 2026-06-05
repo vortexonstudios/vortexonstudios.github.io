@@ -110,6 +110,11 @@
         'g2.desc':      { TR: '1892 Sivas\'ında geçen anlatı odaklı tarihi drama. Genç Ahmet\'in ailesi, aşkı ve vatanı arasında kalan hayatında her seçimin duygusal bir bedeli var.',
                           EN: 'A narrative-driven historical drama set in Sivas, 1892. Every choice in young Ahmet\'s life — caught between family, love, and homeland — carries an emotional cost.' },
         'g.wishlist':   { TR: 'İstek Listesine Ekle',  EN: 'Add to Wishlist' },
+        'g3.status':    { TR: 'Yakında',                EN: 'Coming Soon' },
+        'g3.dev':       { TR: 'Abdullah K. & Emirhan K.',               EN: 'Abdullah K. & Emirhan K.' },
+        'g3.desc':      { TR: 'Telefonunuza gelen tek bir mesajla sıradan vardiya karabasan olur. Dünyada bir ilk: yerel AI, her kararınıza göre sizi tehdit eden, manipüle eden psikolojik bir gerilim deneyimi.',
+                          EN: 'A single message on your phone turns an ordinary shift into a nightmare. A world first: a local AI that dynamically threatens and manipulates you based on every decision you make.' },
+        'bs.steam':     { TR: 'Steam\'de İncele',       EN: 'View on Steam' },
 
         'team.tag':     { TR: 'Arkasındaki İsimler',   EN: 'The People Behind' },
         'team.title':   { TR: 'Ekibimiz',              EN: 'Our Team' },

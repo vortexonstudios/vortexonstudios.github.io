@@ -698,13 +698,30 @@ input, select, textarea { font-family: inherit; }
     background: #090b12;
 }
 
-.games-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+.bs-cta-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+.bs-cta-row .btn-steam,
+.bs-cta-row .btn-primary {
+    flex: 1;
+    justify-content: center;
+    min-width: 140px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+@media (max-width: 1024px) {
+    .games-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
     .games-grid { grid-template-columns: 1fr; }
 }
 
@@ -714,6 +731,31 @@ input, select, textarea { font-family: inherit; }
     background: rgba(255,255,255,0.02);
     border: 1px solid rgba(255,255,255,0.05);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.game-card--featured {
+    border-color: rgba(164, 227, 18, 0.2);
+    box-shadow: 0 0 40px rgba(164, 227, 18, 0.06);
+}
+
+.game-card--featured:hover {
+    border-color: rgba(164, 227, 18, 0.4);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 60px rgba(164, 227, 18, 0.1);
+}
+
+.game-card-spotlight {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: rgba(164, 227, 18, 0.9);
+    color: #07080e;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .game-card:hover {
